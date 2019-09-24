@@ -1,4 +1,4 @@
-package delegationprinciple;
+package solid.delegationprinciple;
 
 class RealPrinter {
     // this is the delegate
