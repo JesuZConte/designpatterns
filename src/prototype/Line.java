@@ -1,0 +1,46 @@
+package prototype;
+
+public class Line
+{
+    public Point start, end;
+
+    public Line(Point start, Point end)
+    {
+        this.start = start;
+        this.end = end;
+    }
+
+    public Line(Line line)
+    {
+        this(line.start, line.end);
+    }
+
+    public Line deepCopy()
+    {
+        return new Line(this);
+    }
+
+    public Point getStart() {
+        return start;
+    }
+
+    public void setStart(Point start) {
+        this.start = start;
+    }
+
+    public Point getEnd() {
+        return end;
+    }
+
+    public void setEnd(Point end) {
+        this.end = end;
+    }
+
+    @Override
+    public String toString() {
+        return "Line{" +
+                "start=" + start +
+                ", end=" + end +
+                '}';
+    }
+}
