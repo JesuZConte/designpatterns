@@ -2,6 +2,7 @@ package bridge.exercise;
 
 public class Triangle extends Shape {
 
+    // Yo pondría el borde por parámetro, pero bueno... como ejemplo solamente lo inicializamos en un entero cualquiera.
     public Triangle(IColor color) {
         super(color);
         this.border = 20;
